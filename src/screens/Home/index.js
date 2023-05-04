@@ -10,9 +10,6 @@ import filmes from '../../data/movies';
 import series from '../../data/series';
 import titulo from '../../components/bannerFilmes/style';
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 export default function Home({navigation}) {
 
   return (
@@ -36,7 +33,6 @@ export default function Home({navigation}) {
               nome = {item.nome}
               nota = {item.nota}
               imagem = {item.imagem}
-              onPress={()=>navigation.navigate('Stream')}
             
             />
 
